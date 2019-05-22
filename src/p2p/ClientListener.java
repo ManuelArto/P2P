@@ -16,9 +16,10 @@ public class ClientListener extends Thread{
 		while(true) {
 			try {
 				String mes = "";
-				while ((char a = in.read()) != -1 )
-					mes += a;
-				System.out.println("Received: " + mes);
+				char c;
+				while((c = (char)in.read()) != '?')
+					mes += c;
+				System.out.print("\nReceived: " + mes + "\nInsert message: ");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

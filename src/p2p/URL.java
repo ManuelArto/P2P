@@ -24,14 +24,14 @@ public class URL {
 	JSONArray ip, port;
 
 	URL() throws IOException{
-		Enumeration<InetAddress> inetAddresses =  NetworkInterface.getByName("enp3s0").getInetAddresses();
+		/*Enumeration<InetAddress> inetAddresses =  NetworkInterface.getByName("enp3s0").getInetAddresses();
 		while(inetAddresses.hasMoreElements()) {
 	         InetAddress ia = inetAddresses.nextElement();
 	         if(!ia.isLinkLocalAddress()) {
 	             address = ia.getHostAddress();
 	         }
-		}
-		// address = InetAddress.getLocalHost().getHostAddress();
+		} */
+		address = InetAddress.getLocalHost().getHostAddress();
 		read();
 	}
 
@@ -58,7 +58,7 @@ public class URL {
 	void read() {
 		try {
 			getLock();
-			String string = new String(Files.readAllBytes(Paths.get("./src/p2p/URL.json")));
+			String string = new String(Files.readAllBytes(Paths.get("./p2p/URL.json")));
 			JSONObject json = new JSONObject(string);
 			ip = json.getJSONArray("ip");
 			port = json.getJSONArray("port");
@@ -76,14 +76,14 @@ public class URL {
 		json.put("port", port);
 
 		getLock();
-		BufferedWriter writer = new BufferedWriter(new FileWriter("./src/p2p/URL.json"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter("./p2p/URL.json"));
 		writer.write(json.toString(json.length()));
 		writer.close();
 	}
 
 	void getLock() {
 		try {
-			File file = new File("./src/p2p/URL.json");
+			File file = new File("./p2p/URL.json");
 			FileChannel channel = new RandomAccessFile(file, "rw").getChannel();
 	        FileLock lock = channel.lock();
 
