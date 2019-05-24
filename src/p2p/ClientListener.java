@@ -1,26 +1,26 @@
 package p2p;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.util.Scanner;
 
 public class ClientListener extends Thread{
 
-	Socket socket;
-	Scanner in;
+	BufferedReader in;
 	
-	public ClientListener(Socket socket, ClientWriter clientWriter) throws IOException {
-		this.socket = socket;
-		in = new Scanner(socket.getInputStream());
-        PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-        clientWriter.addSocket(out);
+	public ClientListener(BufferedReader in) throws IOException {
+		this.in = in;
 	}
 	
 	@Override
 	public void run() {
 		while(true) {
-			String mes = in.nextLine();
+			System.out.println("Listening");
+			String mes = "";
+			try {
+				mes = in.readLine();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 			System.out.println("Received: " + mes);
 		}
 	}

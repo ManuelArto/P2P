@@ -25,8 +25,8 @@ public class ClientWriter extends Thread{
 			System.out.print("Insert the message: ");
 			String mes = scanner.nextLine();
 			for (PrintWriter printWriter : out) {
-				System.out.println("Sending to " + out.indexOf(printWriter) );
 				printWriter.write(mes);
+				printWriter.flush();
 			}
 		}
 	}
