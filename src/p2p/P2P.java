@@ -7,17 +7,21 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class P2P {
 
 	static ClientWriter clientWriter;
+	static String username;
 
-	public static void main(String args[]) throws IOException {
+	public static void main(String[] args) throws IOException {
+
+		System.out.print("Insert your username: ");
+		username = new Scanner(System.in).nextLine() + ": ";
+		clientWriter = new ClientWriter(username);
 
 		URL urls = new URL();
 		int n = urls.getLength();
-
-		clientWriter = new ClientWriter();
 
 		for (int i = 0; i < n; i++) {
 			System.out.println("Connecting to peer: " + i);
@@ -32,7 +36,6 @@ public class P2P {
 
 		for (;;) {
 			Socket socket = server.accept();
-			System.out.println("\nClient connected");
 			newSocket(socket);
 		}
 
@@ -46,7 +49,7 @@ public class P2P {
 
 			InputStreamReader isr = new InputStreamReader(socket.getInputStream());
 			BufferedReader in = new BufferedReader(isr);
-			new ClientListener(in).start();
+			new ClientListener(in, username).start();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

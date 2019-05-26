@@ -1,6 +1,5 @@
 package p2p;
 
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -9,9 +8,11 @@ public class ClientWriter extends Thread{
 
 	LinkedList<PrintWriter> out;
 	Scanner scanner;
+	String username;
 
-	public ClientWriter() throws IOException {
-		out = new LinkedList<PrintWriter>();
+	public ClientWriter(String username) {
+		this.username = username;
+		out = new LinkedList<>();
 		scanner = new Scanner(System.in);
 	}
 
@@ -22,10 +23,10 @@ public class ClientWriter extends Thread{
 	@Override
 	public void run() {
 		while (true) {
-			System.out.print("Insert the message: ");
+			System.out.print(username);
 			String mes = scanner.nextLine();
 			for (PrintWriter printWriter : out) {
-				printWriter.write(mes + "?");
+				printWriter.write(username + mes + "#");
 				printWriter.flush();
 			}
 		}

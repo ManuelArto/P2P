@@ -47,7 +47,7 @@ public class URL {
 	}
 
 	int newPort() {
-		return 4440+port.length()+1;
+		return 8080+port.length()+1;
 	}
 
 	String getIp(int i) {
@@ -68,7 +68,7 @@ public class URL {
 
 	void writeOnFile() throws IOException {
 		ip.put(ip.length(), address);
-		port.put(port.length(), 4440+port.length()+1);
+		port.put(port.length(), 8080+port.length()+1);
 
 		JSONObject json = new JSONObject();
 		json.put("ip", ip);
