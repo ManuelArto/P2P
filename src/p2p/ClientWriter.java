@@ -25,11 +25,7 @@ public class ClientWriter extends Thread{
 			System.out.print("Insert the message: ");
 			String mes = scanner.nextLine();
 			for (PrintWriter printWriter : out) {
-<<<<<<< HEAD
-				printWriter.write(mes);
-=======
 				printWriter.write(mes + "?");
->>>>>>> cc3adf277fac117dc502b5cd93e029279674d302
 				printWriter.flush();
 			}
 		}
