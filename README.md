@@ -1,2 +1,2 @@
 # P2P
-Easy peer to peer made in JAVA
+Easy peer to peer made in JAVA.
