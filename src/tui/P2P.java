@@ -9,26 +9,35 @@ public class P2P {
 
 	static ClientWriter clientWriter;
 	static String username;
+	static Scanner scanner;
 
 	public static void main(String[] args) throws IOException {
+		scanner = new Scanner(System.in);
 
 		System.out.print("Insert your username: ");
-		username = new Scanner(System.in).nextLine() + ": ";
+		username = scanner.nextLine() + ": ";
+
 		clientWriter = new ClientWriter(username);
 
-		URL urls = new URL();
-		int n = urls.getLength();
+		// URL urls = new URL();
+		// int n = urls.getLength();
 
-		for (int i = 0; i < n; i++) {
-			System.out.println("Connecting to peer: " + i);
-			Socket socket = new Socket(urls.getIp(i), urls.getPort(i));
+		while (true) {
+			System.out.println("Insert the ip:port of the server, or insert end");
+			String answer = scanner.nextLine();
+			if (answer.equals("end"))
+				break;
+			System.out.println("Connecting to peer: " + answer);
+			String address[] = answer.split(":");
+			Socket socket = new Socket(address[0], Integer.parseInt(address[1]));
 			newSocket(socket);
 		}
 
 		clientWriter.start();
-		System.out.println("Creating Server");
-		ServerSocket server = new ServerSocket(urls.newPort());
-		urls.writeOnFile();
+		System.out.print("Creating Server, insert port: ");
+		int port = scanner.nextInt();
+		ServerSocket server = new ServerSocket(port);
+		//urls.writeOnFile();
 
 		for (;;) {
 			Socket socket = server.accept();
