@@ -19,26 +19,26 @@ public class P2P {
 
 		clientWriter = new ClientWriter(username);
 
-		// URL urls = new URL();
-		// int n = urls.getLength();
+		URL urls = new URL();
+		int n = urls.getLength();
 
-		while (true) {
-			System.out.println("Insert the ip:port of the server, or insert end");
-			String answer = scanner.nextLine();
-			if (answer.equals("end"))
-				break;
-			System.out.println("Connecting to peer: " + answer);
-			String[] address = answer.split(":");
-			Socket socket = new Socket(address[0], Integer.parseInt(address[1]));
-			//Socket socket = new Socket(urls.getIp(i), urls.getPort(i));
+		for (int i = 0; i < n; i++){
+			//System.out.println("Insert the ip:port of the server, or insert end");
+			//String answer = scanner.nextLine();
+			//if (answer.equals("end"))
+			//	break;
+			System.out.println("Connecting to peer: " + i);
+			//String[] address = answer.split(":");
+			//Socket socket = new Socket(address[0], Integer.parseInt(address[1]));
+			Socket socket = new Socket(urls.getIp(i), urls.getPort(i));
 			newSocket(socket);
 		}
 
-		System.out.print("Creating Server, insert port: ");
-		int port = scanner.nextInt();
-		ServerSocket server = new ServerSocket(port);
+		//System.out.print("Creating Server, insert port: ");
+		//int port = scanner.nextInt();
+		ServerSocket server = new ServerSocket(urls.newPort());
 		clientWriter.start();
-		//urls.writeOnFile();
+		urls.writeOnFile();
 
 		for (;;) {
 			Socket socket = server.accept();

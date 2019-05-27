@@ -48,7 +48,7 @@ public class URL {
 	void read() {
 		try {
 			// getLock();
-			String string = new String(Files.readAllBytes(Paths.get("./src/gui/URL.json")));
+			String string = new String(Files.readAllBytes(Paths.get("./src/tui/URL.json")));
 			JSONObject json = new JSONObject(string);
 			ip = json.getJSONArray("ip");
 			port = json.getJSONArray("port");
@@ -66,7 +66,7 @@ public class URL {
 		json.put("port", port);
 
 		// getLock();
-		BufferedWriter writer = new BufferedWriter(new FileWriter("./src/gui/URL.json"));
+		BufferedWriter writer = new BufferedWriter(new FileWriter("./src/tui/URL.json"));
 		writer.write(json.toString(json.length()));
 		writer.close();
 	}
@@ -74,7 +74,7 @@ public class URL {
 	// test
 	void getLock() {
 		try {
-			File file = new File("./src/gui/URL.json");
+			File file = new File("./src/tui/URL.json");
 			FileChannel channel = new RandomAccessFile(file, "rw").getChannel();
 	        FileLock lock = channel.lock();
 
