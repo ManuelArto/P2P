@@ -28,7 +28,7 @@ public class P2P {
 			if (answer.equals("end"))
 				break;
 			System.out.println("Connecting to peer: " + answer);
-			String address[] = answer.split(":");
+			String[] address = answer.split(":");
 			Socket socket = new Socket(address[0], Integer.parseInt(address[1]));
 			newSocket(socket);
 		}
