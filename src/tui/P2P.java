@@ -30,6 +30,7 @@ public class P2P {
 			System.out.println("Connecting to peer: " + answer);
 			String[] address = answer.split(":");
 			Socket socket = new Socket(address[0], Integer.parseInt(address[1]));
+			//Socket socket = new Socket(urls.getIp(i), urls.getPort(i));
 			newSocket(socket);
 		}
 
