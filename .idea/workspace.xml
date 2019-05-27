@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/gui/View.java" line="15" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e9fd6532-7c48-4ea8-8c36-fb29747ffafe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/View.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/View.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tui/ClientListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tui/ClientWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tui/P2P.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tui/URL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tui/URL.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p2p/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ClientListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p2p/ClientWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ClientWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p2p/P2P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/P2P.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p2p/URL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/URL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/p2p/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/URL.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/P2P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/P2P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/URL.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +29,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/URL.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,39 +39,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/URL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
+                <element signature="e#842#843#0" expanded="true" />
                 <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
                 <element signature="e#928#929#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
                 <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
                 <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
                 <element signature="e#1086#1087#0" expanded="true" />
                 <element signature="method#getLock#0;class#URL#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,7 +70,49 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gui/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/View.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -102,12 +137,20 @@
         <option value="$PROJECT_DIR$/src/p2p/P2P.java" />
         <option value="$PROJECT_DIR$/src/p2p/ClientListener.java" />
         <option value="$PROJECT_DIR$/src/p2p/URL.json" />
-        <option value="$PROJECT_DIR$/src/gui/P2P.java" />
         <option value="$PROJECT_DIR$/src/tui/P2P.java" />
-        <option value="$PROJECT_DIR$/src/gui/URL.json" />
         <option value="$PROJECT_DIR$/src/gui/URL.java" />
+        <option value="$PROJECT_DIR$/src/gui/View.form" />
+        <option value="$PROJECT_DIR$/src/gui/View.java" />
+        <option value="$PROJECT_DIR$/src/gui/URL.json" />
+        <option value="$PROJECT_DIR$/src/gui/P2P.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
@@ -122,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,13 +188,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tui" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GARA2parte" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -182,6 +225,8 @@
   </component>
   <component name="RunManager">
     <configuration name="P2P" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="gui.P2P" />
       <module name="P2P" />
       <extension name="coverage">
@@ -242,20 +287,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Learn" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.12526652" />
+      <window_info id="Learn" order="5" weight="0.32995737" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info active="true" id="Repositories" order="8" visible="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Messages" order="2" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32917964" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.32917964" />
@@ -266,7 +310,7 @@
       <window_info anchor="bottom" auto_hide="true" x="27" y="354" width="1870" height="309" id="Run" order="10" weight="0.3271028" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Maven" order="2" />
+      <window_info anchor="right" id="Maven" order="2" weight="0.32995737" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -319,6 +363,10 @@
     <MESSAGE value="Test" />
     <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/P2P.iml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -364,27 +412,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/View.jfd" />
+    <entry file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2019.1.2/jre64!/java.desktop/java/awt/event/ActionListener.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="119">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -397,16 +429,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/URL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
+            <element signature="e#842#843#0" expanded="true" />
             <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
             <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
             <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
             <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
             <element signature="e#1086#1087#0" expanded="true" />
             <element signature="method#getLock#0;class#URL#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/View.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>

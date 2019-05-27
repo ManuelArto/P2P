@@ -1,4 +1,4 @@
-package gui;
+package tui;
 
 import java.io.PrintWriter;
 import java.util.LinkedList;
