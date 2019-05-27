@@ -33,10 +33,10 @@ public class P2P {
 			newSocket(socket);
 		}
 
-		clientWriter.start();
 		System.out.print("Creating Server, insert port: ");
 		int port = scanner.nextInt();
 		ServerSocket server = new ServerSocket(port);
+		clientWriter.start();
 		//urls.writeOnFile();
 
 		for (;;) {
