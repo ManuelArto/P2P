@@ -7,44 +7,40 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Scanner;
 
-public class P2P {
+public class P2P extends Thread{
 
-    static View view;
-	static ClientWriter clientWriter;
-	static String username;
+    ClientWriter clientWriter;
+	String username;
 
-	public static void main(String[] args) {
+	public void run(){
+	    try {
+            clientWriter = new ClientWriter(username);
 
-	    view = new View();
+            URL urls = new URL();
+            int n = urls.getLength();
 
-	}
+            for (int i = 0; i < n; i++) {
+                System.out.println("Connecting to peer: " + i);
+                Socket socket = new Socket(urls.getIp(i), urls.getPort(i));
+                newSocket(socket);
+            }
 
-	public static void start() throws IOException{
-        clientWriter = new ClientWriter(username);
+            clientWriter.start();
+            System.out.println("Creating Server");
+            ServerSocket server = new ServerSocket(urls.newPort());
+            urls.writeOnFile();
 
-        URL urls = new URL();
-        int n = urls.getLength();
-
-        for (int i = 0; i < n; i++) {
-            System.out.println("Connecting to peer: " + i);
-            Socket socket = new Socket(urls.getIp(i), urls.getPort(i));
-            newSocket(socket);
-        }
-
-        clientWriter.start();
-        System.out.println("Creating Server");
-        ServerSocket server = new ServerSocket(urls.newPort());
-        urls.writeOnFile();
-
-        for (;;) {
-            Socket socket = server.accept();
-            newSocket(socket);
+            for (; ; ) {
+                Socket socket = server.accept();
+                newSocket(socket);
+            }
+        }catch(Exception e){
+            System.out.println(e.getMessage());
         }
     }
 
-	public static void newSocket(Socket socket) {
+	public void newSocket(Socket socket) {
 		try {
 			OutputStreamWriter osw = new OutputStreamWriter(socket.getOutputStream());
 			PrintWriter out = new PrintWriter(osw);
@@ -57,5 +53,4 @@ public class P2P {
 			e.printStackTrace();
 		}
 	}
-
 }

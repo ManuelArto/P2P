@@ -5,6 +5,14 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+import java.net.ServerSocket;
+import java.util.Scanner;
+
+/*
+	The commented part are for the user request without using the json file
+
+ */
+
 public class P2P {
 
 	static ClientWriter clientWriter;
