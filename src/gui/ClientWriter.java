@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class ClientWriter extends Thread{
+public class ClientWriter{
 
 	LinkedList<PrintWriter> out;
 	Scanner scanner;
@@ -20,15 +20,10 @@ public class ClientWriter extends Thread{
 		this.out.add(out);
 	}
 
-	@Override
-	public void run() {
-		while (true) {
-			System.out.print(username);
-			String mes = scanner.nextLine();
-			for (PrintWriter printWriter : out) {
-				printWriter.write(username + mes + "#");
-				printWriter.flush();
-			}
+	public void send(String mes) {
+		for (PrintWriter printWriter : out) {
+			printWriter.write(username + mes + "#");
+			printWriter.flush();
 		}
 	}
 

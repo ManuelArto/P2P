@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9fd6532-7c48-4ea8-8c36-fb29747ffafe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/Chat.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Chat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gui/Login.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/META-INF/P2P.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/META-INF/P2P.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/P2P.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/P2P.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/URL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/View.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/tui/P2P.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/tui/P2P.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/tui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/tui/URL.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Chat.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Chat.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Chat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ClientListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/ClientWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ClientWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/P2P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/P2P.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/URL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/View.form" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/View.jfd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tui/P2P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tui/P2P.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/tui/URL.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,10 +24,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/URL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding>
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#928#929#0" expanded="true" />
+                <element signature="e#951#952#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#997#998#0" expanded="true" />
+                <element signature="e#1033#1034#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="method#getLock#0;class#URL#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="306">
+              <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state relative-caret-position="289">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -57,33 +69,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="200">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/View.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Chat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+              <folding>
+                <element signature="e#678#679#0" expanded="true" />
+                <element signature="e#726#727#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+              </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/Chat.form">
-          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -122,13 +139,15 @@
         <option value="$PROJECT_DIR$/src/tui/URL.java" />
         <option value="$PROJECT_DIR$/src/tui/P2P.java" />
         <option value="$PROJECT_DIR$/src/tui/URL.json" />
-        <option value="$PROJECT_DIR$/src/gui/P2P.java" />
         <option value="$PROJECT_DIR$/src/gui/Main.java" />
         <option value="$PROJECT_DIR$/src/gui/View.form" />
-        <option value="$PROJECT_DIR$/src/gui/URL.json" />
-        <option value="$PROJECT_DIR$/src/gui/Chat.java" />
+        <option value="$PROJECT_DIR$/src/gui/ClientWriter.java" />
+        <option value="$PROJECT_DIR$/src/gui/ClientListener.java" />
+        <option value="$PROJECT_DIR$/src/gui/P2P.java" />
         <option value="$PROJECT_DIR$/src/gui/View.java" />
+        <option value="$PROJECT_DIR$/src/gui/Chat.java" />
         <option value="$PROJECT_DIR$/src/gui/Chat.form" />
+        <option value="$PROJECT_DIR$/src/gui/URL.json" />
       </list>
     </option>
   </component>
@@ -153,6 +172,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,7 +202,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -332,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558966420384</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Upgrade GUI (Not finished)">
+      <created>1563125741232</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563125741232</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -345,7 +371,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Learn" order="5" weight="0.32995737" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info active="true" id="Repositories" order="8" visible="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.33333334" />
@@ -358,7 +384,7 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" auto_hide="true" x="27" y="354" width="1870" height="309" id="Run" order="10" weight="0.3271028" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="27" y="354" width="1870" height="309" id="Run" order="10" visible="true" weight="0.3271028" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Maven" order="2" weight="0.32995737" />
@@ -413,7 +439,8 @@
     <MESSAGE value="Change to Intellij" />
     <MESSAGE value="Test" />
     <MESSAGE value="Test 16:13 27/05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 16:13 27/05" />
+    <MESSAGE value="Upgrade GUI (Not finished)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade GUI (Not finished)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -465,26 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/URL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1033#1034#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="method#getLock#0;class#URL#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tui/URL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="881">
@@ -513,13 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2019.1.2/jre64!/java.base/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2019.1.2/jre64!/java.desktop/java/awt/Frame.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -527,27 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#100#101#0" expanded="true" />
-            <element signature="e#133#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Main.java" />
     <entry file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2019.1.2/jre64!/java.base/jdk/internal/misc/Unsafe.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -555,64 +535,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Chat/form.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Chatf.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Chatf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Chat1.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/Chat/form.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/Chatf.form" />
+    <entry file="file://$PROJECT_DIR$/src/gui/Chatf.java" />
+    <entry file="file://$PROJECT_DIR$/src/gui/Chat1.form" />
     <entry file="file://$PROJECT_DIR$/src/gui/Login.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/URL.json">
+    <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jrt://C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2019.1.2/jre64!/java.base/java/lang/Thread.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#928#929#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="method#getLock#0;class#URL#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="200">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -621,8 +604,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="22" column="64" lean-forward="true" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/URL.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#678#679#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

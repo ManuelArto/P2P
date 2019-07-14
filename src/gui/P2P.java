@@ -10,12 +10,18 @@ import java.net.Socket;
 
 public class P2P extends Thread{
 
+    Chat chat;
     ClientWriter clientWriter;
 	String username;
+
+	public P2P(Chat chat){
+	    this.chat = chat;
+    }
 
 	public void run(){
 	    try {
             clientWriter = new ClientWriter(username);
+            chat.setClientWriter(clientWriter);
 
             URL urls = new URL();
             int n = urls.getLength();
@@ -26,17 +32,16 @@ public class P2P extends Thread{
                 newSocket(socket);
             }
 
-            clientWriter.start();
             System.out.println("Creating Server");
             ServerSocket server = new ServerSocket(urls.newPort());
             urls.writeOnFile();
 
-            for (; ; ) {
+            for (;;) {
                 Socket socket = server.accept();
                 newSocket(socket);
             }
         }catch(Exception e){
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 
@@ -48,7 +53,7 @@ public class P2P extends Thread{
 
 			InputStreamReader isr = new InputStreamReader(socket.getInputStream());
 			BufferedReader in = new BufferedReader(isr);
-			new ClientListener(in, username).start();
+			new ClientListener(in, username, chat).start();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

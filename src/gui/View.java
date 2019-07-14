@@ -5,24 +5,18 @@ import javax.swing.*;
 public class View extends JFrame {
 
     private static P2P p2p;
+    private static Chat chat;
     private static JFrame frame;
 
     private JPanel Login;
     private JTextField username;
     private JButton Enter;
 
-    //Chat
-    private static JLabel chatArea;
 
     public static void main(String args[]) {
-        p2p = new P2P();
+        chat = new Chat();
+        p2p = new P2P(chat);
         createFrame(new View().Login);
-    }
-
-    void addMessage(String message){
-        JPanel panel = (JPanel)frame.getContentPane().getComponent(2);
-        chatArea = (JLabel) panel.getComponent(0);
-        chatArea.setText("CIAOOOOO");
     }
 
     public View() {
@@ -31,8 +25,7 @@ public class View extends JFrame {
                 p2p.username = username.getText() + ": ";
                 p2p.start();
                 frame.dispose();
-                createFrame(new Chat().Chat);
-                addMessage("CIAO");
+                chat.createFrame();
             } catch (Exception e) {
                 e.printStackTrace();
             }
