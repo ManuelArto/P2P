@@ -24,6 +24,7 @@ public class View extends JFrame {
             try {
                 p2p.username = username.getText() + ": ";
                 p2p.start();
+                chat.setUsername(username.getText() + ":");
                 frame.dispose();
                 chat.createFrame();
             } catch (Exception e) {

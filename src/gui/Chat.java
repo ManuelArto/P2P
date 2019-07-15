@@ -1,19 +1,30 @@
 package gui;
 
 import javax.swing.*;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
 
 public class Chat extends JFrame{
 
     private ClientWriter clientWriter;
+    private String username;
 
     private JFrame frame;
     private JPanel Chat;
     private JTextField Insert;
     private JLabel ChatArea;
+    private JScrollPane ScrollPane;
 
     public Chat() {
         Insert.addActionListener(actionEvent -> {
             clientWriter.send(Insert.getText());
+            write(username + Insert.getText());
+            Insert.setText("");
+        });
+        ScrollPane.getVerticalScrollBar().addAdjustmentListener(new AdjustmentListener() {
+            public void adjustmentValueChanged(AdjustmentEvent e) {
+                e.getAdjustable().setValue(e.getAdjustable().getMaximum());
+            }
         });
     }
 
@@ -29,8 +40,11 @@ public class Chat extends JFrame{
         this.clientWriter = clientWriter;
     }
 
+    void setUsername(String username){ this.username = username;}
+
     void write(String mes){
-        ChatArea.setText(ChatArea.getText() + "\n" + mes + "\n");
+        ChatArea.setText("<html>" + ChatArea.getText().replaceAll("<html>", "").replaceAll("</html>", "")
+                         + "<br/>" + mes + "<br/> </html>" );
     }
 
 }
