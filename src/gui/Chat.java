@@ -14,7 +14,7 @@ public class Chat {
     private JScrollPane ScrollPane;
     private JFormattedTextField Insert;
 
-    public Chat() {
+    Chat() {
         Insert.addActionListener(actionEvent -> {
             clientWriter.send(Insert.getText());
             write(username + Insert.getText());

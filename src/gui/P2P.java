@@ -8,17 +8,20 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class P2P extends Thread{
+public class P2P {
 
-    Chat chat;
-    ClientWriter clientWriter;
-	String username;
+    static Chat chat;
+    static Login login;
+    static ClientWriter clientWriter;
+	static String username;
 
-	public P2P(Chat chat){
-	    this.chat = chat;
+    public static void main(String[] args) {
+        chat = new Chat();
+        login = new Login(P2P::startServer, chat);
+        Login.createFrame(login.Login);
     }
 
-	public void run(){
+	static void startServer(){
 	    try {
             clientWriter = new ClientWriter(username);
             chat.setClientWriter(clientWriter);
@@ -45,7 +48,7 @@ public class P2P extends Thread{
         }
     }
 
-	public void newSocket(Socket socket) {
+	static void newSocket(Socket socket) {
 		try {
 			OutputStreamWriter osw = new OutputStreamWriter(socket.getOutputStream());
 			PrintWriter out = new PrintWriter(osw);

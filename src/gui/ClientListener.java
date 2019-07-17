@@ -10,7 +10,7 @@ public class ClientListener extends Thread{
 	BufferedReader in;
 	String username;
 
-	public ClientListener(BufferedReader in, String username, Chat chat) {
+	ClientListener(BufferedReader in, String username, Chat chat) {
 		this.chat = chat;
 		this.in = in;
 		this.username = username;
