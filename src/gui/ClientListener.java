@@ -10,7 +10,7 @@ public class ClientListener extends Thread{
 	BufferedReader in;
 	String username;
 
-	public ClientListener(BufferedReader in, String username, Chat chat) throws IOException {
+	public ClientListener(BufferedReader in, String username, Chat chat) {
 		this.chat = chat;
 		this.in = in;
 		this.username = username;
@@ -20,10 +20,17 @@ public class ClientListener extends Thread{
 	public void run() {
 		while(true) {
 			try {
-				StringBuilder mes = new StringBuilder();
-				char c;
-				while((c = (char)in.read()) != '#')
-					mes.append(c);
+                char c;
+				StringBuilder lengthS = new StringBuilder();
+				while ((c = (char)in.read()) != '_')
+				    lengthS.append(c);
+
+                int lengthI = Integer.parseInt(lengthS.toString());
+                StringBuilder mes = new StringBuilder();
+                for (int i = 0; i < lengthI; i++){
+                    c = (char)in.read();
+                    mes.append(c);
+                }
 				chat.write(mes.toString());
 			} catch (IOException e) {
 				e.printStackTrace();

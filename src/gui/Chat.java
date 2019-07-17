@@ -4,16 +4,15 @@ import javax.swing.*;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 
-public class Chat extends JFrame{
+public class Chat {
 
     private ClientWriter clientWriter;
     private String username;
 
-    private JFrame frame;
-    private JPanel Chat;
-    private JTextField Insert;
+    JPanel Chat;
     private JLabel ChatArea;
     private JScrollPane ScrollPane;
+    private JFormattedTextField Insert;
 
     public Chat() {
         Insert.addActionListener(actionEvent -> {
@@ -21,19 +20,6 @@ public class Chat extends JFrame{
             write(username + Insert.getText());
             Insert.setText("");
         });
-        ScrollPane.getVerticalScrollBar().addAdjustmentListener(new AdjustmentListener() {
-            public void adjustmentValueChanged(AdjustmentEvent e) {
-                e.getAdjustable().setValue(e.getAdjustable().getMaximum());
-            }
-        });
-    }
-
-    void createFrame(){
-        frame = new JFrame("Chat P2P");
-        frame.setContentPane(Chat);
-        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        frame.setSize(800, 500);
-        frame.setVisible(true);
     }
 
     void setClientWriter(ClientWriter clientWriter){
@@ -45,6 +31,9 @@ public class Chat extends JFrame{
     void write(String mes){
         ChatArea.setText("<html>" + ChatArea.getText().replaceAll("<html>", "").replaceAll("</html>", "")
                          + "<br/>" + mes + "<br/> </html>" );
+        SwingUtilities.invokeLater(() ->
+            ScrollPane.getVerticalScrollBar().setValue(ScrollPane.getVerticalScrollBar().getMaximum())
+        );
     }
 
 }

@@ -2,7 +2,7 @@ package gui;
 
 import javax.swing.*;
 
-public class View extends JFrame {
+public class View {
 
     private static P2P p2p;
     private static Chat chat;
@@ -24,9 +24,9 @@ public class View extends JFrame {
             try {
                 p2p.username = username.getText() + ": ";
                 p2p.start();
-                chat.setUsername(username.getText() + ":");
+                chat.setUsername(username.getText() + ": ");
                 frame.dispose();
-                chat.createFrame();
+                createFrame(chat.Chat);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -36,7 +36,7 @@ public class View extends JFrame {
     static void createFrame(JPanel content){
         frame = new JFrame("Chat P2P");
         frame.setContentPane(content);
-        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 500);
         frame.setVisible(true);
     }

@@ -21,8 +21,9 @@ public class ClientWriter{
 	}
 
 	public void send(String mes) {
+	    mes = mes.length()+username.length() + "_" + username + mes;
 		for (PrintWriter printWriter : out) {
-			printWriter.write(username + mes + "#");
+			printWriter.write(mes);
 			printWriter.flush();
 		}
 	}
