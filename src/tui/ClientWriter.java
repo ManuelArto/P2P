@@ -26,7 +26,7 @@ public class ClientWriter extends Thread{
 			System.out.print(username);
 			String mes = scanner.nextLine();
 			for (PrintWriter printWriter : out) {
-				printWriter.write(username + mes + "#");
+				printWriter.write(mes.length()+username.length() + "_" + username + mes);
 				printWriter.flush();
 			}
 		}
