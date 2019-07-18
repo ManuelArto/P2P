@@ -3,19 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e9fd6532-7c48-4ea8-8c36-fb29747ffafe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/ClientListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/ClientListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/ClientWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/ClientWriter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/P2P.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/P2P.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/URL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/gui/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/tui/ClientListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/tui/ClientListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P2P/tui/ClientWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P2P/tui/ClientWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ClientListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ClientListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/ClientWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/ClientWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/P2P.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/P2P.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P2P/gui/View.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/URL.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/URL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/View.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -42,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -51,16 +43,16 @@
         <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+              <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/View.java">
+        <entry file="file://$PROJECT_DIR$/src/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -68,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Chat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="153">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gui/URL.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -120,9 +121,10 @@
         <option value="$PROJECT_DIR$/src/gui/Chat.java" />
         <option value="$PROJECT_DIR$/src/gui/ClientListener.java" />
         <option value="$PROJECT_DIR$/src/gui/ClientWriter.java" />
-        <option value="$PROJECT_DIR$/src/gui/URL.json" />
         <option value="$PROJECT_DIR$/src/gui/P2P.java" />
         <option value="$PROJECT_DIR$/src/gui/View.java" />
+        <option value="$PROJECT_DIR$/src/gui/URL.json" />
+        <option value="$PROJECT_DIR$/src/gui/Login.java" />
       </list>
     </option>
   </component>
@@ -147,6 +149,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,27 +172,12 @@
               <item name="P2P" type="b2602c69:ProjectViewProjectNode" />
               <item name="P2P" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="Chat" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="P2P" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P2P" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="P2P" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P2P" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tui" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563403791140</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.0 version complete">
+      <created>1563404857096</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563404857096</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -387,7 +382,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Learn" order="5" weight="0.32995737" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.1391258" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.14072494" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info active="true" id="Repositories" order="8" visible="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.33333334" />
@@ -400,7 +395,7 @@
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info anchor="bottom" auto_hide="true" x="27" y="354" width="1870" height="309" id="Run" order="10" weight="0.3271028" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="27" y="354" width="1870" height="309" id="Run" order="10" visible="true" weight="0.3271028" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Maven" order="2" weight="0.32995737" />
@@ -459,7 +454,8 @@
     <MESSAGE value="Only more few upgrades to do" />
     <MESSAGE value="Only few more things to do" />
     <MESSAGE value="1.0 version" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0 version" />
+    <MESSAGE value="1.0 version complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 version complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -620,9 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Login.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tui/ClientListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -646,43 +639,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ClientWriter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/ClientListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/URL.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Chat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/P2P.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/View.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/URL.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Login.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
         </state>
       </provider>
     </entry>

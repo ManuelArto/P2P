@@ -18,8 +18,8 @@ public class Login {
                     runnable.run()
                 ).start();
                 chat.setUsername(username.getText() + ": ");
-                frame.dispose();
-                createFrame(chat.Chat);
+                frame.setContentPane(chat.Chat);
+                frame.revalidate();
             } catch (Exception e) {
                 e.printStackTrace();
             }
